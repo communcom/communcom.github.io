@@ -71,3 +71,5 @@ yarn-error.log
 
 # Linaria
 .linaria-cache
+
+.idea
