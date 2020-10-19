@@ -78,8 +78,9 @@ const Footer = () => (
     <ContentWrapper>
       <Title>Why Commun is open-source now?</Title>
       <SubTitle>
-        We believe in the power of community Commun is open-source now to be
-        used and developed for public good
+        We believe in the power of community
+        <br /> Commun is open-source now to be used and developed for public
+        good
       </SubTitle>
       <ButtonsWrapper>
         <LinksButtons type="big" />
