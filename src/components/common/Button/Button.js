@@ -14,6 +14,7 @@ const Button = withTheme(styled.button`
   line-height: 100%;
   white-space: nowrap;
   background: ${({ theme }) => theme.colors.white};
+  text-decoration: none;
   border: none;
   border-radius: 16px;
   appearance: none;

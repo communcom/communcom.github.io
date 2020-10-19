@@ -78,8 +78,8 @@ const Footer = () => (
     <ContentWrapper>
       <Title>Why Commun is open-source now?</Title>
       <SubTitle>
-        Thanks to the blockchain, It’s now possible for social networks to
-        reward their users and provide autonomy to communities
+        We believe in the power of community Commun is open-source now to be
+        used and developed for public good
       </SubTitle>
       <ButtonsWrapper>
         <LinksButtons type="big" />

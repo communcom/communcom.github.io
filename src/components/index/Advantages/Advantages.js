@@ -236,6 +236,16 @@ const LineBottomWrapper = styled.div`
   }
 `
 
+const ButtonWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  ${up.tablet} {
+    flex: initial;
+  }
+`
+
 const GithubIconStyled = styled(GithubIcon)`
   margin-right: 10px;
 `
@@ -323,10 +333,18 @@ const Advantages = () => {
         />
       </Card>
       <LineBottomWrapper />
-      <Button className="black">
-        <GithubIconStyled />
-        Go to GitHub repository
-      </Button>
+      <ButtonWrapper>
+        <Button
+          as="a"
+          href="https://github.com/communcom"
+          rel="noopener noreferrer noindex"
+          target="_blank"
+          className="black"
+        >
+          <GithubIconStyled />
+          Go to GitHub repository
+        </Button>
+      </ButtonWrapper>
     </Wrapper>
   )
 }

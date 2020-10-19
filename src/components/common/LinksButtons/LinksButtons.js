@@ -31,15 +31,33 @@ const Wrapper = styled.div`
 const LinksButtons = ({ type, className }) => {
   return (
     <Wrapper className={className}>
-      <Button className={`primary ${type}`}>
+      <Button
+        as="a"
+        href="https://github.com/communcom"
+        rel="noopener noreferrer noindex"
+        target="_blank"
+        className={`primary ${type}`}
+      >
         <GithubIcon />
         GitHub Repository
       </Button>
-      <Button className={type}>
+      <Button
+        as="a"
+        href="https://www.figma.com/file/f9Lw3pn5TzkIud0fBZUV5Y/Commun-Web-Public?node-id=19952%3A0"
+        rel="noopener noreferrer noindex"
+        target="_blank"
+        className={type}
+      >
         <FigmaIcon />
         Design (Web)
       </Button>
-      <Button className={type}>
+      <Button
+        as="a"
+        href="https://www.figma.com/file/fP48YZ0GI0097hViabnOMH/iOs-Commun-Public?node-id=15421%3A60351"
+        rel="noopener noreferrer noindex"
+        target="_blank"
+        className={type}
+      >
         <FigmaIcon />
         Design (App)
       </Button>

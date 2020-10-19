@@ -7,6 +7,7 @@ const Wrapper = styled.div`
   display: inline-block;
   max-width: 790px;
   margin: 0 30px;
+  transform: translateX(0) scale(0.82);
   transition: opacity 0.3s, transform 0.5s;
   cursor: pointer;
 

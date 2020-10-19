@@ -1,12 +1,9 @@
-import React, { useCallback, useState } from "react"
+import React, { useState } from "react"
 import { styled } from "linaria/react"
 import { up } from "../../../styles"
 import { withTheme } from "../../../styles/themes"
 import Button from "../../common/Button"
 import Carousel from "./Carousel"
-
-import firstImg from "../../../images/carousel/first.png"
-import secondImg from "../../../images/carousel/second.png"
 
 const Wrapper = withTheme(styled.div`
   display: flex;
@@ -68,6 +65,10 @@ const ScrollContainer = styled.div`
 `
 
 const CarouselWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   margin-top: 55px;
 
   ${up.tablet} {
@@ -75,29 +76,45 @@ const CarouselWrapper = styled.div`
   }
 `
 
+const items = {
+  0: [
+    {
+      // image: secondImg,
+      embed: "https://kinescope.io/embed/199680070", // Comments
+    },
+    {
+      embed: "https://kinescope.io/embed/199680072", // Donations
+    },
+    {
+      embed: "https://kinescope.io/embed/199680065", // Post with image
+    },
+    {
+      embed: "https://kinescope.io/embed/199680065", // Post with video link
+    },
+    {
+      embed: "https://kinescope.io/embed/199680068", // Rewards
+    },
+  ],
+  1: [
+    {
+      embed: "https://kinescope.io/embed/199680071", // Personal wallet
+    },
+  ],
+  2: [
+    {
+      embed: "https://kinescope.io/embed/199680067", // Manage communities
+    },
+    {
+      embed: "https://kinescope.io/embed/199680066", // Create community
+    },
+  ],
+}
+
 const TakeLook = () => {
-  const [activeIndex, setActiveIndex] = useState(0)
-  const items = [
-    {
-      image: secondImg,
-    },
-    {
-      image: firstImg,
-    },
-    {
-      image: firstImg,
-    },
-  ]
+  const [activeTab, setActiveTab] = useState(0)
 
-  const handleSelect = useCallback(
-    (_, index) => {
-      setActiveIndex(index)
-    },
-    [setActiveIndex]
-  )
-
-  const handleSetActiveIndex = (index) => () => {
-    setActiveIndex(index)
+  const handleSetActiveTab = (index) => () => {
+    setActiveTab(index)
   }
 
   return (
@@ -106,31 +123,27 @@ const TakeLook = () => {
       <ButtonsWrapper>
         <ScrollContainer>
           <Button
-            className={activeIndex !== 0 && "glassy"}
-            onClick={handleSetActiveIndex(0)}
+            className={activeTab !== 0 && "glassy"}
+            onClick={handleSetActiveTab(0)}
           >
             Basic Activities
           </Button>
           <Button
-            className={activeIndex !== 1 && "glassy"}
-            onClick={handleSetActiveIndex(1)}
+            className={activeTab !== 1 && "glassy"}
+            onClick={handleSetActiveTab(1)}
           >
             Personal Wallet
           </Button>
           <Button
-            className={activeIndex !== 2 && "glassy"}
-            onClick={handleSetActiveIndex(2)}
+            className={activeTab !== 2 && "glassy"}
+            onClick={handleSetActiveTab(2)}
           >
             Community Management
           </Button>
         </ScrollContainer>
       </ButtonsWrapper>
       <CarouselWrapper>
-        <Carousel
-          items={items}
-          activeIndex={activeIndex}
-          onSelect={handleSelect}
-        />
+        <Carousel items={items[activeTab]} />
       </CarouselWrapper>
     </Wrapper>
   )
