@@ -32,20 +32,20 @@ const ItemWrapper = styled.div`
 
   & > iframe {
     width: 342px;
-    height: 192px;
+    height: 191px;
   }
 
   ${up.tablet} {
     & > iframe {
       width: 560px;
-      height: 312px;
+      height: 311px;
     }
   }
 
   ${up.desktop} {
     & > iframe {
       width: 790px;
-      height: 438px;
+      height: 437px;
     }
   }
 `
