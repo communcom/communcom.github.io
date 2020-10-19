@@ -143,7 +143,7 @@ const TakeLook = () => {
         </ScrollContainer>
       </ButtonsWrapper>
       <CarouselWrapper>
-        <Carousel items={items[activeTab]} />
+        <Carousel key={`carousel-${activeTab}`} items={items[activeTab]} />
       </CarouselWrapper>
     </Wrapper>
   )
