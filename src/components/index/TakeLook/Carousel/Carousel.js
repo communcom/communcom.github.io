@@ -32,7 +32,7 @@ const ItemWrapper = styled.div`
 
   & > iframe {
     width: 342px;
-    height: 191px;
+    height: 190px;
   }
 
   ${up.tablet} {
@@ -45,7 +45,7 @@ const ItemWrapper = styled.div`
   ${up.desktop} {
     & > iframe {
       width: 790px;
-      height: 437px;
+      height: 438px;
     }
   }
 `
