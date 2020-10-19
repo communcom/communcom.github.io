@@ -6822,6 +6822,16 @@ gatsby-plugin-linaria@^2.1.0:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-linaria/-/gatsby-plugin-linaria-2.1.0.tgz#407950edc626dfb63e61fc99d41ae99c5e056ad7"
   integrity sha512-Zc78g8h8iPZiMgRXzflwUJTyS952MYgdNA+JDevbrVf3vSlWnPqm0hw1mnO3dmYaEtFdhRNNZ/eForHg6IE5ig==
 
+gatsby-plugin-manifest@^2.4.35:
+  version "2.4.35"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.4.35.tgz#bd8a3ad7eb1649247d1a6fe871bc04f7a0ef15f1"
+  integrity sha512-38QBhMWCnvVB7BzLj5LfUZl4FxV2g0QCw1R9DBZT1y+o8nNQSliFlrMcBXWPi9kQpBQXIhhualQ4oECgCDHW+g==
+  dependencies:
+    "@babel/runtime" "^7.11.2"
+    gatsby-core-utils "^1.3.23"
+    semver "^7.3.2"
+    sharp "^0.25.4"
+
 gatsby-plugin-page-creator@^2.3.32:
   version "2.3.32"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.3.32.tgz#60fd54228d10a79b46291134bb795bf703c3d582"

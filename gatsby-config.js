@@ -48,5 +48,17 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "Commun",
+        short_name: "Commun",
+        start_url: "/",
+        background_color: "#6a80f5",
+        theme_color: "#6a80f5",
+        display: "standalone",
+        icon: "src/images/icon.png",
+      },
+    },
   ],
 }
