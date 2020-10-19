@@ -45,7 +45,7 @@ const ItemWrapper = styled.div`
   ${up.desktop} {
     & > iframe {
       width: 790px;
-      height: 438px;
+      height: 439px;
     }
   }
 `
