@@ -41,6 +41,13 @@ const ItemWrapper = styled.div`
       height: 312px;
     }
   }
+
+  ${up.desktop} {
+    & > iframe {
+      width: 790px;
+      height: 438px;
+    }
+  }
 `
 
 // const PlayWrapper = withTheme(styled.div`
