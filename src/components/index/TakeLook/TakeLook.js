@@ -89,7 +89,7 @@ const items = {
       embed: "https://kinescope.io/embed/199680065", // Post with image
     },
     {
-      embed: "https://kinescope.io/embed/199680065", // Post with video link
+      embed: "https://kinescope.io/embed/199680069", // Post with video link
     },
     {
       embed: "https://kinescope.io/embed/199680068", // Rewards
